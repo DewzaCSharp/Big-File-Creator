@@ -38,7 +38,7 @@ class FileGenerator
         {
             byte[] chunkContent = new byte[chunkSize];
             int currentIndex = 0;
-            while (currentIndex < chunkSize)
+            while (currentIndex < chunkSize) 
             {
                 int toCopy = Math.Min(pattern.Length, chunkSize - currentIndex);
                 Encoding.UTF8.GetBytes(pattern, 0, toCopy, chunkContent, currentIndex);
