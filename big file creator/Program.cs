@@ -24,14 +24,19 @@ class FileGenerator
         Console.WriteLine("File Type:\n1 = .exe\n2 = .bat\n3 = .txt\n4 = .py\n5 = .js\n6 = .cs\n7 = .cpp\n8 = .html\n9 = .css\n10 = custom(soon)\ninput:");
         string choice = Console.ReadLine();
         if (choice == "1") filePath = "UD.exe";
-        else if (choice == "2") filePath = "ud.bat";
-        else if (choice == "3") filePath = "ud.txt";
-        else if (choice == "4") filePath = "ud.py";
-        else if (choice == "5") filePath = "ud.js";
-        else if (choice == "6") filePath = "ud.cs";
-        else if (choice == "7") filePath = "ud.cpp";
-        else if (choice == "8") filePath = "ud.html";
-        else if (choice == "9") filePath = "ud.css";
+        else if (choice == "2") filePath = "UD.bat";
+        else if (choice == "3") filePath = "UD.txt";
+        else if (choice == "4") filePath = "UD.py";
+        else if (choice == "5") filePath = "UD.js";
+        else if (choice == "6") filePath = "UD.cs";
+        else if (choice == "7") filePath = "UD.cpp";
+        else if (choice == "8") filePath = "UD.html";
+        else if (choice == "9") filePath = "UD.css";
+        else if (choice == "10")
+        {
+            Console.Write("please enter your custom extension (example: .ud");
+            filePath = "UD" + Console.ReadLine();
+        }
 
         using (FileStream fs = new FileStream(filePath, FileMode.Create, FileAccess.Write))
         {
