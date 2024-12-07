@@ -21,7 +21,7 @@ class FileGenerator
 
         string filePath = "ud.bat";
 
-        Console.WriteLine("File Type:\n1 = .exe\n2 = .bat\n3 = .txt\n4 = .py\n5 = .js\n6 = .cs\n7 = .cpp\n8 = .html\n9 = .css\ninput:");
+        Console.WriteLine("File Type:\n1 = .exe\n2 = .bat\n3 = .txt\n4 = .py\n5 = .js\n6 = .cs\n7 = .cpp\n8 = .html\n9 = .css\n10 = custom(soon)\ninput:");
         string choice = Console.ReadLine();
         if (choice == "1") filePath = "UD.exe";
         else if (choice == "2") filePath = "ud.bat";
