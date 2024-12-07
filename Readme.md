@@ -7,7 +7,6 @@
 - .txt
 - .py
 - .js
-- .cs
-- .cpp
+- custom
 
 more Coming soon...
