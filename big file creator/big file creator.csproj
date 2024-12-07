@@ -6,6 +6,7 @@
     <RootNamespace>big_file_creator</RootNamespace>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
+    <AssemblyName>bfc</AssemblyName>
   </PropertyGroup>
 
 </Project>
