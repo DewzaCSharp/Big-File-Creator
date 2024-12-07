@@ -21,7 +21,7 @@ class FileGenerator
 
         string filePath = "ud.bat";
 
-        Console.WriteLine("File Type:\n1 = .exe\n2 = .bat\n3 = .txt\n4 = .py\n5 = .js\n6 = .cs\n7 = .cpp\n8 = .html\ninput:");
+        Console.WriteLine("File Type:\n1 = .exe\n2 = .bat\n3 = .txt\n4 = .py\n5 = .js\n6 = .cs\n7 = .cpp\n8 = .html\n9 = .css\ninput:");
         string choice = Console.ReadLine();
         if (choice == "1") filePath = "UD.exe";
         else if (choice == "2") filePath = "ud.bat";
@@ -31,6 +31,7 @@ class FileGenerator
         else if (choice == "6") filePath = "ud.cs";
         else if (choice == "7") filePath = "ud.cpp";
         else if (choice == "8") filePath = "ud.html";
+        else if (choice == "9") filePath = "ud.css";
 
         using (FileStream fs = new FileStream(filePath, FileMode.Create, FileAccess.Write))
         {
