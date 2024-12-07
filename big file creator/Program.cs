@@ -34,7 +34,7 @@ class FileGenerator
         else if (choice == "9") filePath = "UD.css";
         else if (choice == "10")
         {
-            Console.Write("please enter your custom extension (example: .ud");
+            Console.Write("please enter your custom extension (example: .ud)");
             filePath = "UD" + Console.ReadLine();
         }
 
