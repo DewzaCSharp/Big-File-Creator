@@ -10,3 +10,5 @@
 - custom
 
 more Coming soon...
+
+# if you have any suggestions, write me an E-Mail: dewzacsharp@gmail.com
