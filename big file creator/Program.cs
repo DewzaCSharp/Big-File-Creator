@@ -16,7 +16,7 @@ class FileGenerator
 
         int chunkSize = 10 * 1000 * 1000;
 
-        long numChunks = targetSizeBytes / chunkSize;
+        long numChunks = targetSizeBytes / chunkSize; 
         long remainingBytes = targetSizeBytes % chunkSize;
 
         string filePath = "ud.bat";
