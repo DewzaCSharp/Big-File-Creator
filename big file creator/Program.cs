@@ -21,20 +21,16 @@ class FileGenerator
 
         string filePath = "ud.bat";
 
-        Console.WriteLine("File Type:\n1 = .exe\n2 = .bat\n3 = .txt\n4 = .py\n5 = .js\n6 = .cs\n7 = .cpp\n8 = .html\n9 = .css\n10 = custom\ninput:");
+        Console.WriteLine("File Type:\n1 = .exe\n2 = .bat\n3 = .txt\n4 = .py\n5 = .js\n6 = custom\ninput:");
         string choice = Console.ReadLine();
         if (choice == "1") filePath = "UD.exe";
         else if (choice == "2") filePath = "UD.bat";
         else if (choice == "3") filePath = "UD.txt";
         else if (choice == "4") filePath = "UD.py";
         else if (choice == "5") filePath = "UD.js";
-        else if (choice == "6") filePath = "UD.cs";
-        else if (choice == "7") filePath = "UD.cpp";
-        else if (choice == "8") filePath = "UD.html";
-        else if (choice == "9") filePath = "UD.css";
-        else if (choice == "10")
+        else if (choice == "6")
         {
-            Console.Write("please enter your custom extension (example: .ud)");
+            Console.Write("please enter your custom extension (example: .ud):");
             filePath = "UD" + Console.ReadLine();
         }
 
